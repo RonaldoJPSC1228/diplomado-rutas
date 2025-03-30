@@ -17,6 +17,7 @@ const Productos = () => {
       <div className="d-flex flex-row flex-wrap justify-content-center">
         {listaProductos.map((producto) => (
           <Card
+            key={producto.id}
             image={producto.image}
             title={producto.title}
             price={producto.price}
